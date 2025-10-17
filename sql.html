@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodingPedia — SQL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="codingpedia.css">
+</head>
+<body>
+  <header class="box">
+    <h1>Welcome to CodingPedia!</h1>
+    <nav class="box">
+      <a href="index.html">Index</a>
+      <a href="php.html">PHP</a>
+      <a href="sql.html" aria-current="page">SQL</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <main class="box">
+      <article>
+        <h2>Article 1</h2>
+        <p>
+          <abbr title="Structured Query Language">SQL</abbr> is a domain-specific language used to manage data, especially in a relational
+          database management system (RDBMS). It is particularly useful in handling structured data, i.e., data incorporating relations
+          among entities and variables.
+        </p>
+      </article>
+
+      <article>
+        <h2>Article 2</h2>
+        <table>
+          <caption>Course planning</caption>
+          <thead>
+            <tr>
+              <th>Subject</th>
+              <th>Description</th>
+              <th>Grade obtained</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SQL 101</td>
+              <td>A quick introduction to the SQL language</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>SQL join</td>
+              <td>Discovery of JOIN to combine rows from multiple tables</td>
+              <td>13</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h2>Article 3</h2>
+        <ul>
+          <li>I think SQL is quite easy to understand once you know the basic commands.</li>
+          <li>It’s very useful for managing and organizing data in databases.</li>
+          <li>SQL helps me extract exactly the information I need with simple queries.</li>
+          <li>Sometimes complex joins or nested queries can be a bit confusing.</li>
+          <li>I like how SQL works with many different database systems like MySQL and PostgreSQL.</li>
+          <li>It’s a skill every web developer should learn because almost all applications use data.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Article 4</h2>
+        <pre><code>-- Create a table
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT
+);
+
+-- Insert data into the table
+INSERT INTO students (id, name, age)
+VALUES (1, 'Alice', 21),
+       (2, 'Bob', 22);
+
+-- Select all data
+SELECT * FROM students;
+
+-- Select only names of students older than 21
+SELECT name FROM students WHERE age &gt; 21;
+
+-- Update a record
+UPDATE students
+SET age = 23
+WHERE name = 'Alice';
+
+-- Delete a record
+DELETE FROM students
+WHERE id = 2;</code></pre>
+      </article>
+    </main>
+
+    <aside class="box">
+      <p>
+        Peace is a lie, there is only passion.<br>
+        Through passion, I gain strength.<br>
+        Through strength, I gain power.<br>
+        Through power, I gain victory.<br>
+        Through victory, my chains are broken.<br>
+        The Force shall free me.
+      </p>
+    </aside>
+  </div>
+
+  <footer class="box">
+    <address>
+      Diego De La Torre<br>
+      Epitech Nice<br>
+      0607070707
+    </address>
+  </footer>
+</body>
+</html>

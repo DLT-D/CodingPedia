@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodingPedia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="codingpedia.css">
+</head>
+<body>
+  <!-- Task 08 : le carré animé -->
+  <div class="moving_square" aria-label="Animated square"></div>
+
+  <header class="box">
+    <h1>Welcome to CodingPedia!</h1>
+    <nav class="box">
+      <a href="index.html" aria-current="page">Index</a>
+      <a href="php.html">PHP</a>
+      <a href="sql.html">SQL</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <main class="box">
+      <p>
+        CodingPedia is a collective encyclopedia project on the Internet aiming to be universal and multi-lingual which functions as a wiki.<br>
+        CodingPedia has for goal to offer freely reusable objective and verifiable content that anyone can modify and improve.
+      </p>
+
+      <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="3" max="99"><br><br>
+
+        <span>Sex:</span>
+        <label><input type="radio" name="sex" value="male" checked> Male</label>
+        <label><input type="radio" name="sex" value="female"> Female</label><br><br>
+
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" minlength="10" maxlength="10" placeholder="0600000000"><br><br>
+
+        <label for="HairColor">Hair Color:</label>
+        <input type="color" id="HairColor" name="HairColor" value="#FF0000"><br><br>
+
+        <label for="Date">Date:</label>
+        <input type="date" id="Date" name="Date"><br><br>
+
+        <label for="technology">Technology :</label>
+        <select id="technology" name="technology">
+          <option value="PHP">PHP</option>
+          <option value="SQL">SQL</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="10" cols="50" placeholder="Write your message here..." required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <aside class="box">
+      <p>My name is Diego, I'm 18 and I currently study HTML!</p>
+    </aside>
+  </div>
+
+  <footer class="box">
+    <address>
+      Diego De La Torre<br>
+      Epitech Nice<br>
+      0607070707
+    </address>
+  </footer>
+</body>
+</html>

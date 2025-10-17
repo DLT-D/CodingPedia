@@ -1,0 +1,44 @@
+.box {
+  border: 2px solid #000;     
+  margin: 10px;               
+  padding-left: 10px;         
+  padding-right: 10px;        
+}
+
+body {
+  background: gray;    
+}
+header, nav, main, aside, footer {
+  background: #fff;
+}
+.content {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+}
+.content > main  { flex: 0 0 80%; min-width: 0; }
+.content > aside { flex: 0 0 20%; }
+
+header {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Task 08 */
+.moving_square {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: moveSquare 5s linear 5;
+  will-change: transform, background;
+}
+@keyframes moveSquare {
+  0%   { transform: translate(0, 0);           background: red; }
+  25%  { transform: translate(0, 300px);       background: green; }
+  50%  { transform: translate(300px, 300px);   background: blue; }
+  75%  { transform: translate(300px, 0);       background: yellow; }
+  100% { transform: translate(0, 0);           background: red; }
+}
